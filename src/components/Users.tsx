@@ -27,7 +27,7 @@ const [userData, setData] = useState<User[]>([]);
         borderColor="primary.main"
         sx={{ width: 200, height: 250}}>
         <ImageListItem key={item.avatar}>
-        <img
+        <img className='avatar'
            src={`${item.avatar}?w=14&h=14`}
            srcSet={`${item.avatar}?w=14&h=14&dpr=1 1x`}
            alt={item.email}
